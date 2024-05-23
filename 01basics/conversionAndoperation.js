@@ -29,4 +29,11 @@ let userNameNew = Number(userName);
 console.log(userNameNew); // output value => NaN
 console.log(typeof(userNameNew)); // String converted to number (DataType)
 
+// BOOLEAN Conversion 
+
+let isloggedIn = true;
+let loggedIn = Number(isloggedIn);
+console.log(loggedIn); // output value => 1 for true and 0 for false
+console.log(typeof loggedIn); //Boolean converted to number (DataType)
+
 
