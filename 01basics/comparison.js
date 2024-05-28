@@ -17,3 +17,19 @@ console.log(null > 1);
 console.log( null >= 0);
 console.log(null == 0);
 // note here comparison operator is converting null to zero and comparing with 0 and equality operator is not converting null to zero
+
+
+// Practice 
+
+let primiitveString = "Hello";
+primiitveString[0] = "J"
+console.log(primiitveString);
+//
+
+let objectsStrings = new String("Hello")
+objectsStrings[0] = "J"
+console.log(objectsStrings);
+
+console.log(primiitveString===objectsStrings);
+console.log(primiitveString==objectsStrings);
+
