@@ -59,5 +59,47 @@ console.log(newTest.indexOf("your"));// output => 7 index of the first occurence
  //if the index is more it will repeat
 
  
+// method10 repeat()
+ const greets = "Happy "
+ console.log(`we are feeling ${greets.repeat(3)}`); // this code will repeat the string Happy to 3 times as the parameters is defined 
 
+// expected outpu => "we are feeling very Happy Happy Happy"
 
+// method11 replace()
+const newWords = "we have decided to go to laddakh ."
+console.log(newWords.replace("decided", 9)); // the replace method replaces the string and provide a new string 
+// the parameters are search value and replace value
+
+// method12 replaceAll()
+//this method uses pattern to replace suppose a string contains a text dog in many places and we need to change that to monkey 
+const coronviruses = "we have benn hit with corona in many ways . corona causes us to be helpless ,corona has the largest impact on peoples lives taking people lives corona is very bad"
+console.log(coronviruses.replaceAll("corona","leach")); // this method changes all corona to leach
+console.log(coronviruses.replace("corona","leach")); // this method only changes the first occurence of corona.
+
+// method13 slice()
+// The slice() method of String values extracts a section of this string and 
+//returns it as a new string, without modifying the original string.
+const Wordmatt = "The mirror"
+console.log(Wordmatt.slice(4,8));
+
+// output =>
+/*          indexStart        indexEnd
+                  ↓               ↓
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| T | h | e |   | m | i | r | r | o | r |
+
+                  m   i   r   r
+                 _______________
+                      ↑
+                    Result */
+// practice 
+
+const practiceQuestion = "The index of the first character to include in the returned substring."
+const indexedWord = practiceQuestion.indexOf("first"); 
+console.log(indexedWord);//output => 17
+
+const slicedWord = practiceQuestion.slice(17,22)
+console.log(slicedWord); //output=> first
+
+const letter = slicedWord.substring(2,4);
+console.log(letter);
